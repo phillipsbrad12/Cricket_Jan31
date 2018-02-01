@@ -102,3 +102,24 @@ div.checkImageWrapper:active {
 	border-left-style: none;
 	background-color: #000000;
 }
+
+.gameNames {
+	font-family: "Trebuchet MS";
+	font-size: 20px;
+	font-weight: bold;
+	margin: 0px;
+	padding: 0px;
+	height: 30px;
+	text-align: center;
+	width: 230px;
+	color: #000000;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	background-color: #c0c0c0;
+}
