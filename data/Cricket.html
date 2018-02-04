@@ -43,6 +43,7 @@
 
 <body bgcolor="#000000" leftmargin="3" topmargin="3" marginwidth="3" marginheight="3">
 <div class="homeButton"><a href="../index.html"></a></div>
+	<button id="submit_score" class="buttonPush">Submit Score</button>
 <div id="checkGrid">
 	<div class="chartCellNames">
 		<input name="p1_name2" type="text" class="names" id="p1_name2" value="Brad">
@@ -51,7 +52,7 @@
 	<div class="chartCell">
 		<div id="p1_cell_20" class="checkImageWrapper" onClick="doScore(20, 'p1')"><img src="../images/checks0.png" class="checkImages" id="p1_i_20"></div>
 		<div class="numbers">20</div>
-		<div id="p2_cell_20" class="checkImageWrapper" onClick="doScore(20, 'p2')"><img src="../images/checks0.png" class="checkImages" id="p2_i_20"></div>
+		<div id="p2_cell_20" class="checkImageWrapper" onClick="doScore(20, 'p2')"><img src="../images/checks0.png" class="checkImages" id="p2_i_20"></div>		
 	</div>
 	<div class="chartCell">
 		<div id="p1_cell_19" class="checkImageWrapper" onClick="doScore(19, 'p1')"><img src="../images/checks0.png" class="checkImages" id="p1_i_19"></div>
@@ -89,7 +90,13 @@
 		<div class="score" id="player2score">0</div>
 	</div>
 	<div class="chartCellNames">
+	<!--form id="gameDropDown"-->
 		<input name="game_name" type="text" class="gameNames" id="game_name" value="Regular Cricket">
+		<!--select form="gameDropDown" name="gameDropDown"class="gameNames" text="hey there">
+			<option class="gameOption" value="---"</option>
+			<option class="gameOption" value="Regular"</option>
+			<option value="gameOption" value="small"</option>
+		</select-->
 </div>
 	
 <div style="clear:both">&nbsp;<p>&nbsp;</p></div>

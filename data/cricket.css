@@ -123,3 +123,32 @@ div.checkImageWrapper:active {
 	border-left-style: none;
 	background-color: #c0c0c0;
 }
+
+.buttonPush{
+	position: relative
+	width:0px;
+	height:80px;
+	font-size:20px;
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: #262626;
+	text-align:center;
+	float: right;
+	background-color: #c0c0c0;
+	font-family: "Trebuchet MS";
+}
+
+.gameOption{
+	position: relative
+	width:0px;
+	color:#000000;
+	height:80px;
+	font-size:20px;
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: #262626;
+	text-align:center;
+	float: right;
+	background-color: #c0c0c0;
+	font-family: "Trebuchet MS";
+}
