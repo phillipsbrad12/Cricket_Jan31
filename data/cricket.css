@@ -33,7 +33,7 @@ body { -webkit-touch-callout: none; -webkit-text-size-adjust: none; -webkit-user
 }
 
 div.checkImageWrapper:active {
-	background-color: #333;
+	background-color: #7a7171;
 }
 
 .score {
@@ -125,11 +125,11 @@ div.checkImageWrapper:active {
 }
 
 .buttonPush{
-	position: relative
-	width:0px;
-	height:80px;
+	position: relative;
+	height:60px;
+	margin-top:10px;
+	margin-right:10px;
 	font-size:20px;
-	border-bottom-width: 3px;
 	border-bottom-style: solid;
 	border-bottom-color: #262626;
 	text-align:center;
