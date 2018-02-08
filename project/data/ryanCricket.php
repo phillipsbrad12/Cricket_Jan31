@@ -37,13 +37,13 @@
 
 <!-- Javascript Base
 	================================================== -->
+<script src="../scripts/common.js" type="text/javascript" charset="utf-8"></script>
 </head>
-<body>
+<body bgcolor="#000000" leftmargin="3" topmargin="3" marginwidth="3" marginheight="3">
 <div id="checkGrid">
 	<div class="chartCellNames">
 	<form action="../service/welcome_php.php" method="get">
 		Name: <input type="text" name="name"><br>
-		E-mail: <input type="text" name="email"><br>
 		<input type="submit">
 	</form>
 		<input name="p1_name2" type="text" class="names" id="p1_name2" value="Brad">
