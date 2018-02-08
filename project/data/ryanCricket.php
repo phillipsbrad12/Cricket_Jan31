@@ -25,7 +25,6 @@
 
 
 
-
 <!--
 <link media="only screen and (device-width: 320px or device-width:480px)" href="../style.css" type="text/css" rel="stylesheet" charset="utf-8">
 <meta name="viewport" content="width=320" />
@@ -101,7 +100,7 @@
 		</form>
 		<form id="spinDropDown" class="">
 			<!--input name="game_name" type="text" class="gameNames" id="game_name" value="Regular Cricket"-->
-			<select id="spinSelect"class="gameNames">
+			<select id="spinSelect" class="gameNames">
 				<option class="gameOption">20</option>
 				<option class="gameOption">19</option>
 				<option class="gameOption">18</option>
@@ -126,8 +125,7 @@
 		</form>					  
 	</div>
 	<div>
-		<button id="spin_board" class="spinButtonPush" onClick="spinBoardJs()">Spin Board!</button>
-		<button id="reset_form" class="resetButton" onClick="resetForm()">RESET</button>
+		<button id="spinBoard" onClick="spinBoardJs()">Spin Board!</button>
 	</div>
 <!--div style="clear:both">&nbsp;<p>&nbsp;</p></div-->
 

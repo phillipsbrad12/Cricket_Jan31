@@ -118,6 +118,16 @@ function writeit(text,id){
 	}
 }
 
+function spinBoardJs(){
+	var randomNumberBetween0and20 = Math.floor((Math.random() * 20) + 1);
+	document.getElementById("spinSelect").value = randomNumberBetween0and20;
+}
+
+function resetForm(){
+	alert("Are you sure you want to reset the game?");
+	location.reload();
+}
+
 
 var AlastDo = new Array();
 
