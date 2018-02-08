@@ -40,15 +40,14 @@
 	================================================== -->
 <script src="../scripts/common.js" type="text/javascript" charset="utf-8"></script>
 </head>
-<body bgcolor="#000000" leftmargin="3" topmargin="3" marginwidth="3" marginheight="3">
+<body bgcolor="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
 	<button id="submit_score" class="buttonPush" onClick="">Submit Score</button>
-	<button id="spin_board" class="spinButtonPush" onClick="">Spin Board!</button>
 <div id="checkGrid">
 	<div class="chartCellNames">
-	<form action="../service/welcome_php.php" method="get">
+ 	<!--form action="../service/welcome_php.php" method="get">
 		Name: <input type="text" name="name"><br>
 		<input type="submit">
-	</form>
+	</form-->
 		<input name="p1_name2" type="text" class="names" id="p1_name2" value="Brad">
 		<input name="p1_name2" type="text" class="names" id="p1_name2" value="Ryan">
 	</div>
@@ -124,10 +123,12 @@
 				<option class="gameOption">2</option>
 				<option class="gameOption">1</option>				
 			</select>
-		</form>
-						  
-</div>
-<div style="clear:both">&nbsp;<p>&nbsp;</p></div>
+		</form>					  
+	</div>
+	<div>
+		<button id="spin_board" class="spinButtonPush" onClick="">Spin Board!</button>
+	</div>
+<!--div style="clear:both">&nbsp;<p>&nbsp;</p></div-->
 
 </body>
 
