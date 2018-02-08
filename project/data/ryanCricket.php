@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="shortcut icon" href="../images/checks3_mario.ico" />															   
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -40,6 +41,8 @@
 <script src="../scripts/common.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body bgcolor="#000000" leftmargin="3" topmargin="3" marginwidth="3" marginheight="3">
+	<button id="submit_score" class="buttonPush" onClick="">Submit Score</button>
+	<button id="spin_board" class="spinButtonPush" onClick="">Spin Board!</button>
 <div id="checkGrid">
 	<div class="chartCellNames">
 	<form action="../service/welcome_php.php" method="get">
@@ -90,7 +93,39 @@
 		<div class="score" id="player2score">0</div>
 	</div>
 	<div class="chartCellNames">
-		<input name="game_name" type="text" class="gameNames" id="game_name" value="Regular Cricket">
+		<form id="gameDropDown">
+			<!--input name="game_name" type="text" class="gameNames" id="game_name" value="Regular Cricket"-->
+			<select class="gameNames">
+				<option class="gameOption">Regular</option>
+				<option class="gameOption">Small</option>
+			</select>
+		</form>
+		<form id="spinDropDown" class="">
+			<!--input name="game_name" type="text" class="gameNames" id="game_name" value="Regular Cricket"-->
+			<select class="gameNames">
+				<option class="gameOption">20</option>
+				<option class="gameOption">19</option>
+				<option class="gameOption">18</option>
+				<option class="gameOption">17</option>
+				<option class="gameOption">16</option>
+				<option class="gameOption">15</option>
+				<option class="gameOption">14</option>
+				<option class="gameOption">13</option>
+				<option class="gameOption">12</option>
+				<option class="gameOption">11</option>
+				<option class="gameOption">10</option>
+				<option class="gameOption">9</option>
+				<option class="gameOption">8</option>
+				<option class="gameOption">7</option>
+				<option class="gameOption">6</option>
+				<option class="gameOption">5</option>
+				<option class="gameOption">4</option>
+				<option class="gameOption">3</option>
+				<option class="gameOption">2</option>
+				<option class="gameOption">1</option>				
+			</select>
+		</form>
+						  
 </div>
 <div style="clear:both">&nbsp;<p>&nbsp;</p></div>
 
