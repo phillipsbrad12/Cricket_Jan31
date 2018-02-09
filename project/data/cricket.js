@@ -124,7 +124,7 @@ function spinBoardJs(){
 }
 
 function resetForm(){
-	alert("Are you sure you want to reset the game?");
+	alert("Are you sure you want to reset the game?  YOU'D BE A REAL DICK IF YOU DID THIS WHILE YOU WERE GETTING YOUR ASS KICKED!!!");
 	location.reload();
 }
 
