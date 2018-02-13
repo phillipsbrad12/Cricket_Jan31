@@ -126,7 +126,7 @@
 		</form>					  
 	</div>
 	<div>
-		<button id="spin_board" class="spinButtonPush" onClick="spinBoardJs()">Spin Board!</button>
+		<button id="spin_board" class="spinButtonPush" onClick="spinBoardWrapper()">Spin Board!</button>
 		<button id="reset_form" class="resetButton" onClick="resetForm()">RESET</button>
 	</div>
 <!--div style="clear:both">&nbsp;<p>&nbsp;</p></div-->
