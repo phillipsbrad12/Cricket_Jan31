@@ -118,9 +118,13 @@ function writeit(text,id){
 	}
 }
 
+function bpIsOdd(num) {
+	return num % 2;
+}
+
 function spinBoardJs(){
 	var randomNumberBetween0and20 = Math.floor((Math.random() * 20) + 1);
-	document.getElementById("spinSelect").value = randomNumberBetween0and20;		
+	document.getElementById("spinSelect").value = randomNumberBetween0and20;
 }
 
 function spinBoardWrapper(){

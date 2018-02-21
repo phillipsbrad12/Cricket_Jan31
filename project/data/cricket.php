@@ -94,7 +94,7 @@
 	<div class="chartCellNames">
 		<form id="gameDropDown">
 			<!--input name="game_name" type="text" class="gameNames" id="game_name" value="Regular Cricket"-->
-			<select class="gameNames">
+			<select id="gameDropDown" class="gameNames">
 				<option class="gameOption">Regular</option>
 				<option class="gameOption">Small</option>
 			</select>
