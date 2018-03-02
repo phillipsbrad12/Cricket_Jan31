@@ -97,6 +97,8 @@
 			<select id="gameDropDown" class="gameNames">
 				<option class="gameOption">Regular</option>
 				<option class="gameOption">Small</option>
+				<option class="gameOption">Inner</option>
+				<option class="gameOption">Outer</option>
 			</select>
 		</form>
 		<form id="spinDropDown" class="">
