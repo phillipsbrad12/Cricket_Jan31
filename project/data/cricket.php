@@ -94,41 +94,43 @@
 	<div class="chartCellNames">
 		<form id="gameDropDown">
 			<!--input name="game_name" type="text" class="gameNames" id="game_name" value="Regular Cricket"-->
-			<select id="gameDropDown" class="gameNames">
-				<option class="gameOption">Regular</option>
-				<option class="gameOption">Small</option>
-				<option class="gameOption">Inner</option>
-				<option class="gameOption">Outer</option>
+			<select id="gameDropDownSelect" class="gameNames">
+				<option id="optReg" class="gameOption">Regular</option>
+				<option id="optSm" class="gameOption">Small</option>
+				<option id="optInn" class="gameOption">Inner</option>
+				<option id="optOut" class="gameOption">Outer</option>
 			</select>
 		</form>
 		<form id="spinDropDown" class="">
 			<!--input name="game_name" type="text" class="gameNames" id="game_name" value="Regular Cricket"-->
-			<select id="spinSelect"class="gameNames">
-				<option class="gameOption">20</option>
-				<option class="gameOption">19</option>
-				<option class="gameOption">18</option>
-				<option class="gameOption">17</option>
-				<option class="gameOption">16</option>
-				<option class="gameOption">15</option>
-				<option class="gameOption">14</option>
-				<option class="gameOption">13</option>
-				<option class="gameOption">12</option>
-				<option class="gameOption">11</option>
-				<option class="gameOption">10</option>
-				<option class="gameOption">9</option>
-				<option class="gameOption">8</option>
-				<option class="gameOption">7</option>
-				<option class="gameOption">6</option>
-				<option class="gameOption">5</option>
-				<option class="gameOption">4</option>
-				<option class="gameOption">3</option>
-				<option class="gameOption">2</option>
-				<option class="gameOption">1</option>				
+			<select id="spinSelect"class="gameNames" value="">
+				<option class="gameOption" value="20">20</option>
+				<option class="gameOption" value="19">19</option>
+				<option class="gameOption" value="18">18</option>
+				<option class="gameOption" value="17">17</option>
+				<option class="gameOption" value="16">16</option>
+				<option class="gameOption" value="15">15</option>
+				<option class="gameOption" value="14">14</option>
+				<option class="gameOption" value="13">13</option>
+				<option class="gameOption" value="12">12</option>
+				<option class="gameOption" value="11">11</option>
+				<option class="gameOption" value="10">10</option>
+				<option class="gameOption" value="9">9</option>
+				<option class="gameOption" value="8">8</option>
+				<option class="gameOption" value="7">7</option>
+				<option class="gameOption" value="6">6</option>
+				<option class="gameOption" value="5">5</option>
+				<option class="gameOption" value="4">4</option>
+				<option class="gameOption" value="3">3</option>
+				<option class="gameOption" value="2">2</option>
+				<option class="gameOption" value="1">1</option>				
 			</select>
 		</form>					  
 	</div>
 	<div>
-		<button id="spin_board" class="spinButtonPush" onClick="spinBoardWrapper()">Spin Board!</button>
+		<button id="fuck_shit_up" class="spinButtonPush" onClick="spinWrapper('spinSelect','true','true')">FUCK SHIT UP</button>
+		<button id="spin_board" class="gameSpin" onClick="spinWrapper('spinSelect','true','false')">Game Spin</button>
+		<button id="spin" class="gameSpin" onClick="spinWrapper('spinSelect','false','true')">Board Spin</button>
 		<button id="reset_form" class="resetButton" onClick="resetForm()">RESET</button>
 	</div>
 <!--div style="clear:both">&nbsp;<p>&nbsp;</p></div-->

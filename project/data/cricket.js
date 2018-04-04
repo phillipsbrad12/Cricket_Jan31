@@ -122,21 +122,34 @@ function bpIsOdd(num) {
 	return num % 2;
 }
 
-function spinBoardJs(){
+function spinBoardJs(id,spinGame,spinDaBoard){
 	var randomNumberBetween0and20 = Math.floor((Math.random() * 20) + 1);
-	document.getElementById("spinSelect").value = randomNumberBetween0and20;
+	
+	if (spinDaBoard == "true") {
+		document.getElementById(id).value = randomNumberBetween0and20;		
+	}
+
+	if (spinGame == "true"){
+		if (randomNumberBetween0and20 > 9){
+			document.getElementById("gameDropDownSelect").options.selectedIndex = 0;
+		} else if (10 > randomNumberBetween0and20 > 6){
+			document.getElementById("gameDropDownSelect").options.selectedIndex = 1;
+		} else if (7 > randomNumberBetween0and20 > 3){
+			document.getElementById("gameDropDownSelect").options.selectedIndex = 2;
+		} else if (4 > randomNumberBetween0and20 > 0){
+			document.getElementById("gameDropDownSelect").options.selectedIndex = 3;
+		}
+	}
 }
 
-function spinBoardWrapper(){
+function spinWrapper(elemId,game,board){
 	var i = 100;
 	var x = 0;
-	document.getElementById("spinSelect").style.color = 'white';
 	do {
-		window.setTimeout(spinBoardJs,i);
+		window.setTimeout(spinBoardJs,i,elemId,game,board);
 		i = (i+i);
 	}
 	while (i < 3000)
-	document.getElementById("spinSelect").style.color = 'black';
 }
 
 
