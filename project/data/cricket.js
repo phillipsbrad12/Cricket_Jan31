@@ -122,31 +122,32 @@ function bpIsOdd(num) {
 	return num % 2;
 }
 
-function spinBoardJs(id,spinGame,spinDaBoard){
+function spinBoardJs(id,spinGame,spinDaBoard,fuckShitUp){
 	var randomNumberBetween0and20 = Math.floor((Math.random() * 20) + 1);
-	
-	if (spinDaBoard == "true") {
+	/* alert(randomNumberBetween0and20); */
+		
+	if (spinDaBoard == 1) {
 		document.getElementById(id).value = randomNumberBetween0and20;		
 	}
-
-	if (spinGame == "true"){
-		if (randomNumberBetween0and20 > 9){
+	
+	if (spinGame == 1){
+		if (randomNumberBetween0and20 > 10){
 			document.getElementById("gameDropDownSelect").options.selectedIndex = 0;
-		} else if (10 > randomNumberBetween0and20 > 6){
-			document.getElementById("gameDropDownSelect").options.selectedIndex = 1;
-		} else if (7 > randomNumberBetween0and20 > 3){
-			document.getElementById("gameDropDownSelect").options.selectedIndex = 2;
-		} else if (4 > randomNumberBetween0and20 > 0){
-			document.getElementById("gameDropDownSelect").options.selectedIndex = 3;
+			} else if (randomNumberBetween0and20 > 6){
+				document.getElementById("gameDropDownSelect").options.selectedIndex = 1;
+			} else if (randomNumberBetween0and20 > 3){
+				document.getElementById("gameDropDownSelect").options.selectedIndex = 2;
+			} else if (randomNumberBetween0and20 > 0){
+				document.getElementById("gameDropDownSelect").options.selectedIndex = 3;
 		}
 	}
 }
 
-function spinWrapper(elemId,game,board){
+function spinWrapper(elemId,game,board,fsuSelected){
 	var i = 100;
 	var x = 0;
 	do {
-		window.setTimeout(spinBoardJs,i,elemId,game,board);
+		window.setTimeout(spinBoardJs,i,elemId,game,board,fsuSelected);
 		i = (i+i);
 	}
 	while (i < 3000)

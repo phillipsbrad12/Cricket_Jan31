@@ -85,6 +85,7 @@
 		<div id="p1_cell_25" class="checkImageWrapper" onClick="doScore(25, 'p1')"><img src="../images/checks0.png" class="checkImages" id="p1_i_25"></div>
 		<div class="numbers">B</div>
 		<div id="p2_cell_25" class="checkImageWrapper" onClick="doScore(25, 'p2')"><img src="../images/checks0.png" class="checkImages" id="p2_i_25"></div>
+	
 	</div>
 	<div class="chartCellScore">
 		<div class="score" id="player1score">0</div>
@@ -95,10 +96,10 @@
 		<form id="gameDropDown">
 			<!--input name="game_name" type="text" class="gameNames" id="game_name" value="Regular Cricket"-->
 			<select id="gameDropDownSelect" class="gameNames">
-				<option id="optReg" class="gameOption">Regular</option>
-				<option id="optSm" class="gameOption">Small</option>
-				<option id="optInn" class="gameOption">Inner</option>
-				<option id="optOut" class="gameOption">Outer</option>
+				<option id="optReg" class="gameOption" value="Regular">Regular</option>
+				<option id="optSm" class="gameOption" value="Small">Small</option>
+				<option id="optInn" class="gameOption" value="Inner">Inner</option>
+				<option id="optOut" class="gameOption" value="Outer">Outer</option>
 			</select>
 		</form>
 		<form id="spinDropDown" class="">
@@ -126,13 +127,14 @@
 				<option class="gameOption" value="1">1</option>				
 			</select>
 		</form>					  
-	</div>
-	<div>
-		<button id="fuck_shit_up" class="spinButtonPush" onClick="spinWrapper('spinSelect','true','true')">FUCK SHIT UP</button>
-		<button id="spin_board" class="gameSpin" onClick="spinWrapper('spinSelect','true','false')">Game Spin</button>
-		<button id="spin" class="gameSpin" onClick="spinWrapper('spinSelect','false','true')">Board Spin</button>
+ 	</div>
+	<div> 
+		<button id="fuck_shit_up" class="spinButtonPush" onClick="spinWrapper('spinSelect',1,1,1)">Synced Spin</button>
+		<button id="spin_board" class="gameSpin" onClick="spinWrapper('spinSelect',1,0,0)">Random Game</button>
+		<button id="spin" class="gameSpin" onClick="spinWrapper('spinSelect',0,1,0)">Board Spin</button>
 		<button id="reset_form" class="resetButton" onClick="resetForm()">RESET</button>
 	</div>
+
 <!--div style="clear:both">&nbsp;<p>&nbsp;</p></div-->
 
 </body>
