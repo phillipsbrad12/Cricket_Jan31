@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="ScoreboardController">
+<div ng-repeat="x in scores">
+	<label>{{x.value}}</label>
+	<span ng-bind="x.value"></span>
+	<button ng-click="incrementScore(x.value)">Score</button>
+	</div>
+	<label>19</label>
+	<button ng-click="incrementScore()">{{count}}</button>
+	<input type="button" ng-model="scoreNum" value=15 ng-click="incrementScoreByVal(15)">
+	<input type="button" ng-repeat="x in scores" ng-model="scoreNum" ng-click="incrementScoreByVal(15)">
+	<p>Total Score: {{count * value}}</p>
+	<p>Total Score: {{count * value}}</p>
+</div>
+
+<script src="myApp.js"></script>
+<script src="scoreboardController.js"></script>
+
+</body>
+</html>
