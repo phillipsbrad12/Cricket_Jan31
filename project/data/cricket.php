@@ -42,6 +42,8 @@
 </head>
 <body bgcolor="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
 	<button id="submit_score" class="buttonPush" onClick="">Submit Score</button>
+	<iframe src="https://open.spotify.com/embed?uri=spotify:track:1h9Bx0bcEIfiv31E2G58Hf" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media">
+	</iframe>
 <div id="checkGrid">
 	<div class="chartCellNames">
  	<!--form action="../service/welcome_php.php" method="get">
